@@ -4,7 +4,7 @@ return [
     'name' => env('SLIM_NAME', 'default'),
     'mode' => env('SLIM_MODE', 'development'),
     'debug' => env('SLIM_DEBUG', true),
-    'templates.path' => RESOURCES_PATH . 'views/',
+    'templates.path' => VIEWS_PATH,
 
     'log.enabled' => env('SLIM_LOG', true),
 

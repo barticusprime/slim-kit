@@ -44,9 +44,9 @@ Modules are essentially packages that need to be setup to work with your Slim ap
 
 Only file names that end with  `.active.php` are loaded by the Starter Kit, so you can deactivate modules easily if you wish so.
 
-#### Services
+#### Services & Middleware
 
-You can register all of your necessary [services](http://docs.slimframework.com/di/overview/) within `bootstrap/services.php`.
+You can register all of your necessary [services](http://docs.slimframework.com/di/overview/) and [middleware](http://docs.slimframework.com/middleware/overview/) in `bootstrap/services.php` and `bootstrap/middleware.php` respectively.
 
 ## Resources
 

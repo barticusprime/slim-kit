@@ -1,9 +1,10 @@
 <?php
 
+use Slim\Slim;
+
 session_cache_limiter(false);
 session_start();
 
-use Slim\Slim;
 
 /**
  * Defines paths to directories.
@@ -56,6 +57,11 @@ foreach ($modules as $module) {
  * Handle the application services.
  */
 require_once 'services.php';
+
+/**
+ * Handle the application middleware.
+ */
+require_once 'middleware.php';
 
 /**
  * Handle the application routes.
