@@ -2,7 +2,7 @@
 
 A Starter Kit that provides a basic structure to start working with Slim 2.
 
-This Starter Kit is bundled with [Eloquent](), [phpdotenv](), [Slim Views]() and [Twig]().
+This Starter Kit is bundled with [Eloquent](https://github.com/illuminate/database), [phpdotenv](https://github.com/vlucas/phpdotenv), [Slim Views](https://github.com/slimphp/Slim-Views) and [Twig](https://github.com/twigphp/Twig).
 
 If you don't want to use any of the packages that the Starter Kit provides, you can easily remove them or swap them with your packages of choice.
 
