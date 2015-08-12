@@ -17,7 +17,7 @@ define('VIEWS_PATH', RESOURCES_PATH . 'views/');
 define('PUBLIC_PATH', ROOT_PATH . 'public/');
 define('ASSETS_PATH', PUBLIC_PATH . 'assets/');
 
-require_once 'support/helpers.php';
+require_once 'helpers.php';
 
 require_once '../vendor/autoload.php';
 
@@ -31,8 +31,7 @@ require_once '../vendor/autoload.php';
  * request.
  */
 if (env('SLIM_MODE', 'development') === 'development') {
-    $dotenv = new Dotenv\Dotenv(ROOT_PATH);
-    $dotenv->load();
+    (new Dotenv\Dotenv(ROOT_PATH))->load();
 }
 
 /**
@@ -45,7 +44,7 @@ $app = new Slim(getconfig('slim'));
 $app->setName($app->config('name'));
 
 /**
- * Load all the necessary modules.
+ * Load all the active modules.
  */
 $modules = glob(MODULES_PATH . '*.active.php');
 
@@ -61,4 +60,4 @@ require_once 'services.php';
 /**
  * Handle the application routes.
  */
-require_once '../app/routes.php';
+require_once APP_PATH . 'routes.php';
