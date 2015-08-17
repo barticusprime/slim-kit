@@ -31,15 +31,22 @@
             display: inline-block;
         }
 
+        .image {
+            width: 77px;
+            height: 77px;
+            margin-right: 2px;
+        }
+
         .title {
             font-size: 64px;
+            float: right;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="content">
-            <img src="http://www.slimframework.com/assets/images/logo-256.png" alt="Slim Framework" style="width: 50%; height: auto;">
+            <img src="http://www.slimframework.com/assets/images/logo-256.png" class="image" alt="Slim Framework">
             <div class="title">{{ message }}</div>
         </div>
     </div>
