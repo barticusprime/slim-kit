@@ -5,7 +5,6 @@ use Slim\Slim;
 session_cache_limiter(false);
 session_start();
 
-
 /**
  * Defines paths to directories.
  */
@@ -18,9 +17,16 @@ define('VIEWS_PATH', RESOURCES_PATH . 'views/');
 define('PUBLIC_PATH', ROOT_PATH . 'public/');
 define('ASSETS_PATH', PUBLIC_PATH . 'assets/');
 
+/**
+ * Require the Starter Kit helpers first,
+ * to avoid overrides.
+ */
 require_once 'helpers.php';
 
-require_once '../vendor/autoload.php';
+/**
+ * Register the Composer autoloader.
+ */
+require_once ROOT_PATH . 'vendor/autoload.php';
 
 /**
  * Load the enviroment variables if we're on
@@ -42,6 +48,9 @@ if (env('SLIM_MODE', 'development') === 'development') {
  */
 $app = new Slim(getconfig('slim'));
 
+/**
+ * Set the name of the Slim application.
+ */
 $app->setName($app->config('name'));
 
 /**

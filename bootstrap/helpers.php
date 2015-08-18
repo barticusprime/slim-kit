@@ -15,7 +15,7 @@ if (! function_exists('getconfig')) {
         $file = CONFIG_PATH . $filename . '.php';
 
         if (! file_exists($file)) {
-            throw new \RuntimeException('Cannot locate "' . $filename . '"" in "' . CONFIG_PATH . '".');
+            throw new \RuntimeException('Cannot locate "' . $filename . '" in "' . CONFIG_PATH . '".');
         }
 
         return require_once $file;
