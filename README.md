@@ -19,7 +19,7 @@ git clone https://github.com/oxyzero/Slim2StarterKit.git
 Update your `composer.json` file if needed, and just do:
 
 ```
-composer install
+php composer install
 ```
 
 And you're set!
@@ -71,16 +71,22 @@ Although we do not have tools like `Artisan`, we have a basic approach to easily
 
 Using your command line, within the root folder, try using:
 
-```slim migrate```
+```
+php slim migrate
+```
 
 This will run all of your migrations listed in `database/migrations`.
 If you wish to undo your migrations, execute:
 
-```slim migrate:reset```
+```
+php slim migrate:reset
+```
 
 And you can create your seeds within `database/seeds`, and seed the database with:
 
-```slim seed```
+```
+php slim seed
+```
 
 * This functionality is still on development.
 
