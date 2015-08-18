@@ -64,6 +64,26 @@ If you wish to use a production enviroment, the enviroment variables should be s
 
 * Note: Define `SLIM_MODE=production` to set Slim into production.
 
+# Migrations & Seeding
+
+Since the Starter Kit comes bundled with the [Illuminate Database](https://github.com/illuminate/database) package, we can enjoy migrations and seeding.
+Although we do not have tools like `Artisan`, we have a basic approach to easily perform simple migrations and seeding.
+
+Using your command line, within the root folder, try using:
+
+```slim migrate```
+
+This will run all of your migrations listed in `database/migrations`.
+If you wish to undo your migrations, execute:
+
+```slim migrate:reset```
+
+And you can create your seeds within `database/seeds`, and seed the database with:
+
+```slim seed```
+
+* This functionality is still on development.
+
 # Helpers
 
 The Starter Kit also offers a few helper functions to aid your development process.
