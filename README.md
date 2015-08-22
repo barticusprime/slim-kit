@@ -1,22 +1,22 @@
 # Slim 2: Starter Kit
 
-A Starter Kit that provides a basic structure to start working with Slim 2.
+The Starter Kit provides a base structure to start working with Slim 2.
 
 This Starter Kit is bundled with [Eloquent](https://github.com/illuminate/database), [phpdotenv](https://github.com/vlucas/phpdotenv), [Slim Views](https://github.com/slimphp/Slim-Views) and [Twig](https://github.com/twigphp/Twig).
 
-If you don't want to use any of the packages that the Starter Kit provides, you can easily remove them or swap them with your packages of choice.
+If there's any packages the Starter Kit provides that you personally don't want to utilize, you can easily remove them or swap them with your packages of choice.
 
-Although the Starter Kit provides a directory structure, you can easily tinker it into your liking or extend it.
+Although the Starter Kit provides a directory structure, you can easily tinker it into your liking or expand it.
 
 # Installation
 
-To install the Starter Kit clone this repository:
+Clone this repository to install the Starter Kit:
 
 ```
 git clone https://github.com/oxyzero/Slim2StarterKit.git
 ```
 
-Update your `composer.json` file if needed, and just do:
+You may need to update your `composer.json` file and, if so, just do:
 
 ```
 php composer install
@@ -26,11 +26,13 @@ And you're set!
 
 # Structure
 
-The Starter Kit structure is very easy to get used to. All of the necessary preparation to boot Slim is located at the `bootstrap` directory. In here, you can set your configuration, add or remove modules, and add services to your Slim application.
+The Starter Kit structure is very easy to get used to. All of the necessary tooling and configurations to boot Slim are located in the `bootstrap` directory. There, you can set your configuration, add or remove modules and add services to your Slim application.
 
 ### Configuration
 
-Configuration files are just standard php files that return an array of keys and values. You can set up your configuration files however you want them. Also, you have an helper function `getconfig($filename)` to obtain the configuration from the `$filename`.
+Configuration files are just standard php files that return an array of keys and values. You can set up your configuration files however you want them. 
+
+Further, you have a helper function `getconfig($filename)` to obtain the configuration from the `$filename`.
 
 Example:
 
@@ -42,11 +44,11 @@ $config = getconfig('database'); // Will obtain the configuration located in: bo
 
 Modules are essentially packages that need to be setup to work with your Slim application.
 
-Only file names that end with  `.active.php` are loaded by the Starter Kit, so you can deactivate modules easily if you wish so.
+Only file names that end with  `.active.php` are loaded by the Starter Kit, so you can deactivate modules easily if you wish to do so.
 
 #### Services & Middleware
 
-You can register all of your necessary [services](http://docs.slimframework.com/di/overview/) and [middleware](http://docs.slimframework.com/middleware/overview/) in `bootstrap/services.php` and `bootstrap/middleware.php` respectively.
+You can register all of your necessary [services](http://docs.slimframework.com/di/overview/) and [middleware](http://docs.slimframework.com/middleware/overview/) in `bootstrap/services.php` and `bootstrap/middleware.php`, respectively.
 
 ## Resources
 
@@ -54,7 +56,7 @@ The `resources` directory contains the `assets` and `views` directories. Do not 
 
 Instead, the `resources/assets` is meant to store files that complement your `resources/views` such as SASS files.
 
-If you want to store your css, js or image files, `public/assets` is the place to go.
+If you want to store your css, js or image files, `public/assets` is the place to do just that.
 
 # Enviroment
 
@@ -76,6 +78,7 @@ php slim migrate
 ```
 
 This will run all of your migrations listed in `database/migrations`.
+
 If you wish to undo your migrations, execute:
 
 ```
@@ -88,7 +91,7 @@ And you can create your seeds within `database/seeds`, and seed the database wit
 php slim seed
 ```
 
-* This functionality is still on development.
+* This functionality is still in development.
 
 # Helpers
 
@@ -105,7 +108,7 @@ The Starter Kit also offers a few helper functions to aid your development proce
     + Dumps all of the variables and kills the page.
 
 + view($template, array $data)
-    + Renders a template file. This function makes rendering views a bit more conveniant and less verbose. Example:
+    + Renders a template file. This function makes rendering views a bit more convenient and less verbose. Example:
 
         ```php
             view('welcome', ['message' => 'Welcome!']);
@@ -115,6 +118,6 @@ The Starter Kit also offers a few helper functions to aid your development proce
 
 # Contributing
 
-If you happen to find an error, or you might be thinking about a general improvement to the project, please do create an Issue, or consider creating a Pull Request.
+If you happen to find an error or you might know how to improve the project further, then please do create an Issue or consider creating a Pull Request.
 
 All contributions are appreciated!
