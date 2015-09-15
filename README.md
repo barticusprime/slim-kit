@@ -1,6 +1,6 @@
 # Slim Kit
 
-Slim Kit provides a base structure to start working with Slim 2.
+Slim Kit provides a base structure to start working with the Slim Framework.
 
 It is bundled with [Eloquent](https://github.com/illuminate/database), [phpdotenv](https://github.com/vlucas/phpdotenv), [Slim Views](https://github.com/slimphp/Slim-Views) and [Twig](https://github.com/twigphp/Twig).
 
@@ -13,7 +13,7 @@ Although the kit provides a directory structure, you can easily tinker it into y
 Clone this repository to install the kit:
 
 ```
-git clone https://github.com/oxyzero/Slim2StarterKit.git
+git clone https://github.com/oxyzero/slim-kit.git
 ```
 
 You may need to update your `composer.json` file and, if so, just do:
