@@ -1,16 +1,16 @@
-# Slim 2: Starter Kit
+# Slim Kit
 
-The Starter Kit provides a base structure to start working with Slim 2.
+Slim Kit provides a base structure to start working with Slim 2.
 
-This Starter Kit is bundled with [Eloquent](https://github.com/illuminate/database), [phpdotenv](https://github.com/vlucas/phpdotenv), [Slim Views](https://github.com/slimphp/Slim-Views) and [Twig](https://github.com/twigphp/Twig).
+It is bundled with [Eloquent](https://github.com/illuminate/database), [phpdotenv](https://github.com/vlucas/phpdotenv), [Slim Views](https://github.com/slimphp/Slim-Views) and [Twig](https://github.com/twigphp/Twig).
 
-If there's any packages the Starter Kit provides that you personally don't want to utilize, you can easily remove them or swap them with your packages of choice.
+If there's any packages the kit provides that you personally don't want to utilize, you can easily remove them or swap them with your packages of choice.
 
-Although the Starter Kit provides a directory structure, you can easily tinker it into your liking or expand it.
+Although the kit provides a directory structure, you can easily tinker it into your liking or expand it.
 
 # Installation
 
-Clone this repository to install the Starter Kit:
+Clone this repository to install the kit:
 
 ```
 git clone https://github.com/oxyzero/Slim2StarterKit.git
@@ -26,7 +26,7 @@ And you're set!
 
 # Structure
 
-The Starter Kit structure is very easy to get used to. All of the necessary tooling and configurations to boot Slim are located in the `bootstrap` directory. There, you can set your configuration, add or remove modules and add services to your Slim application.
+The kit structure is very easy to get used to. All of the necessary tooling and configurations to boot Slim are located in the `bootstrap` directory. There, you can set your configuration, add or remove modules and add services to your Slim application.
 
 ### Configuration
 
@@ -44,7 +44,7 @@ $config = getconfig('database'); // Will obtain the configuration located in: bo
 
 Modules are essentially packages that need to be setup to work with your Slim application.
 
-Only file names that end with  `.active.php` are loaded by the Starter Kit, so you can deactivate modules easily if you wish to do so.
+Only file names that end with  `.active.php` are loaded by the kit, so you can deactivate modules easily if you wish to do so.
 
 #### Services & Middleware
 
@@ -68,7 +68,7 @@ If you wish to use a production enviroment, the enviroment variables should be s
 
 # Migrations & Seeding
 
-Since the Starter Kit comes bundled with the [Illuminate Database](https://github.com/illuminate/database) package, we can enjoy migrations and seeding.
+Since the kit comes bundled with the [Illuminate Database](https://github.com/illuminate/database) package, we can enjoy migrations and seeding.
 Although we do not have tools like `Artisan`, we have a basic approach to easily perform simple migrations and seeding.
 
 Using your command line, within the root folder, try using:
@@ -95,7 +95,7 @@ php slim seed
 
 # Helpers
 
-The Starter Kit also offers a few helper functions to aid your development process.
+The kit also offers a few helper functions to aid your development process.
 
 + getconfig($filename)
     + Gets the configuration from a file located in the config directory.
